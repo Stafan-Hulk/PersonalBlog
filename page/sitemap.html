@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sitemap.css">
+    <title>个人博客</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/axios.js"></script>
+</head>
+
+<body>
+    <div class="title">个人博客‘s SiteMap</div>
+    <div class="link"><a href="/">博客首页</a> >> 站点地图</div>
+    <div class="blog_list" id="blog_list">
+        <span>最新文章</span>
+        <ul>
+            <li v-for="blog in blogList"><a :href="blog.link">{{blog.title}}</a></li>
+        </ul>
+    </div>
+
+    <script src="./js/setmap.js"></script>
+</body>
+
+</html>
